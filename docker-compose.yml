@@ -1,0 +1,53 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
+
+networks:
+  app-tier-danareksaweb:
+    driver: bridge
+
+services:
+
+    mysql:
+      image: bitnami/mysql:latest
+      container_name: danareksaweb-mysql
+      working_dir: /application
+      volumes:
+         - mysql_data:/bitnami
+      environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_DATABASE=danareksaweb
+        - MYSQL_USER=danareksaweb
+        - MYSQL_PASSWORD=danareksaweb
+      ports:
+        - "3307:3306"
+      networks:
+        - app-tier-danareksaweb
+
+    webserver:
+      image: nginx:alpine
+      container_name: danareksaweb-webserver
+      working_dir: /application
+      volumes:
+          - .:/application
+          - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      ports:
+       - "2121:80"
+      networks:
+        - app-tier-danareksaweb
+
+    php-fpm:
+      build: phpdocker/php-fpm
+      container_name: danareksaweb-php-fpm
+      working_dir: /application
+      volumes:
+        - .:/application
+        - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.0/fpm/conf.d/99-overrides.ini
+      networks:
+        - app-tier-danareksaweb
+
+volumes:
+  mysql_data:
+    driver: local
+
