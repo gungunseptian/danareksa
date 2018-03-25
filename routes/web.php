@@ -17,7 +17,10 @@
 
 Route::get('/', 'frontend\HomeController@index');
 Route::get('/news/{id}/{slug}', 'frontend\NewsController@detail');
-Route::get('/about-us', 'frontend\PagesController@about');
-Route::get('/values', 'frontend\PagesController@values');
-Route::get('/our-people', 'frontend\OurPeopleController@index');
+Route::get('/who-we-are/about-us', 'frontend\PagesController@about');
+Route::get('/who-we-are/values', 'frontend\PagesController@values');
+Route::get('/who-we-are/our-people', 'frontend\OurPeopleController@index');
+Route::get('/who-we-are/awards', 'frontend\AwardsController@index');
+Route::get('/who-we-are/milestone', 'frontend\MilestoneController@index');
+Route::get('/resources/work-with-us', 'frontend\WorkWithUsController@index');
 

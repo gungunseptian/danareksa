@@ -127,8 +127,8 @@
             <div class="link-our-desc">
               <p><span>Saatnya mengenal lebih jauh Danareksa Sekuritas</span></p>
               <p>
-                <a href="awards.html" class="btn-white">Our Achievements</a>
-                <a href="milestone.html" class="btn-white">Our Journey</a>
+                <a href="awards" class="btn-white">Our Achievements</a>
+                <a href="milestone" class="btn-white">Our Journey</a>
               </p>
             </div>
           </div>        
@@ -172,7 +172,7 @@
         <div class="row">
           <div class="col-sm-5 col-md-4 col-xs-12">
             <span>Tertarik untuk jadi bagian dari kami?</span>
-            <a href="work-with-us.html" class="btn-white">Work With Us</a>
+            <a href="/resources/work-with-us" class="btn-white">Work With Us</a>
           </div>
         </div>
       </div>

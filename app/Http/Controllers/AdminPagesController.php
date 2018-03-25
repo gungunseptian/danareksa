@@ -34,7 +34,6 @@
 			$this->col[] = ["label"=>"Subtitle","name"=>"subtitle"];
 			$this->col[] = ["label"=>"Description","name"=>"description"];
 			$this->col[] = ["label"=>"Image","name"=>"image","image"=>true];
-			$this->col[] = ["label"=>"Users","name"=>"id_cms_users","join"=>"cms_users,name"];
 			$this->col[] = ["label"=>"Status","name"=>"status"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
@@ -44,7 +43,7 @@
 			$this->form[] = ['label'=>'Subtitle','name'=>'subtitle','type'=>'text','width'=>'col-sm-9'];
 			$this->form[] = ['label'=>'Description','name'=>'description','type'=>'wysiwyg','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10','help'=>'File types support : JPG, JPEG, PNG, GIF, BMP'];
 			$this->form[] = ['label'=>'Image','name'=>'image','type'=>'upload','validation'=>'image|max:3000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'checkbox','validation'=>'required','width'=>'col-sm-10','dataenum'=>'Active;InActive'];
+			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'select','validation'=>'required|min:1|max:255','width'=>'col-sm-10','dataenum'=>'Active;InActive'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM

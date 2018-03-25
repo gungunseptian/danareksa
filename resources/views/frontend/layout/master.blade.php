@@ -31,8 +31,8 @@
             </ul>
             <div class="logo-done"><a href="/frontend/#"><img src="/frontend/images/logo-done.jpg"></a></div>
             <ul class="nav navbar-right">
-              <li class="show-desktop"><a href="/frontend/work-with-us.html">Work With Us</a></li>
-              <li class="show-desktop"><a href="/frontend/contact-us.html">Contact Us</a></li>
+              <li class="show-desktop"><a href="/resources/work-with-us">Work With Us</a></li>
+              <li class="show-desktop"><a href="#">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -64,33 +64,36 @@
                     </div>
                   </div>
                   <label for="navbar-mobile" class="bars-menu"><span class="fa fa-bars"></span></label>
+                
+                  
+                
                   <input type="checkbox" name="" id="navbar-mobile">
                   <ul class="nav navbar-nav navbar-right navbar-menu">
                     <div class="header-menu-mobile">
                       <a href="/frontend/#"><img src="/frontend/images/logo-done.jpg"></a>
                       <label for="navbar-mobile" class="bars-menu bm-inner"><span class="fa fa-times"></span></label>
                     </div>
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/frontend/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Who Whe Are <span class="fa fa-angle-down"></span></a>
+                    <li class="{{ Request::segment(1)=="" ? "active" : "" }}"><a href="/">Home</a></li>
+                    <li class="{{ Request::segment(1)=="who-we-are" ? "active" : "" }}"><a href="/frontend/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Who We Are <span class="fa fa-angle-down"></span></a>
                       <ul class="dropdown-menu dropdown-menu-danareksa">
-                        <li><a href="/about-us">About Us</a></li>
-                        <li><a href="/values">Values</a></li>
-                        <li><a href="/our-people">Our People</a></li>
-                        <li><a href="/awards">Awards</a></li>
-                        <li><a href="/milestone">Milestone</a></li>
+                        <li><a href="/who-we-are/about-us">About Us</a></li>
+                        <li><a href="/who-we-are/values">Values</a></li>
+                        <li><a href="/who-we-are/our-people">Our People</a></li>
+                        <li><a href="/who-we-are/awards">Awards</a></li>
+                        <li><a href="/who-we-are/milestone">Milestone</a></li>
                       </ul>
                     </li>
-                    <li><a href="/frontend/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What We Do <span class="fa fa-angle-down"></span></a>
+                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What We Do <span class="fa fa-angle-down"></span></a>
                       <ul class="dropdown-menu dropdown-menu-danareksa">
-                        <li><a href="/frontend/services.html">Services</a></li>
-                        <li><a href="/frontend/investment-banking.html">Investment Banking</a></li>
-                        <li><a href="/frontend/brokeraging.html">Brokeraging</a></li>
-                        <li><a href="/frontend/research.html">Research</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Investment Banking</a></li>
+                        <li><a href="#">Brokeraging</a></li>
+                        <li><a href="#">Research</a></li>
                       </ul>
                     </li>
-                    <li><a href="/frontend/resources.html">Resources</a></li>
-                    <li class="show-mobile"><a href="/frontend/work-with-us.html">Work With Us</a></li>
-                    <li class="show-mobile"><a href="/frontend/contact-us.html">Contact Us</a></li>
+                    <li class="{{ Request::segment(1)=="resources" ? "active" : "" }}"><a href="#">Resources</a></li>
+                    <li class="show-mobile"><a href="/resources/work-with-us">Work With Us</a></li>
+                    <li class="show-mobile"><a href="#">Contact Us</a></li>
                     <div class="form-search-page show-mobile">
                       <div class="col-form-search">
                         <form>
