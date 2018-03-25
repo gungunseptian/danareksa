@@ -1,0 +1,209 @@
+.clearfix {
+    margin-bottom: 400px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -99;
+}
+.container-fluid-ft-top {
+    background: url(../images/back-footer-top.jpg) center;
+    background-size: 100% 100%;
+    padding: 45px 30px;
+}
+.container-fluid-ft-btm {
+    background: #0a3056;
+    padding: 30px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #68839e;
+    text-align: center;
+}
+.title-footer {
+    font-size: 18px;
+    font-family: 'HelveticaNeueBold';
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 8px;
+}
+.title-footer:before {
+    width: 30px;
+    height: 4px;
+    background: #8ca6c3;
+    position: absolute;
+    top: 100%;
+    content: "";
+    border-radius: 2px;
+}
+.frame-footer-desc {
+    color: #fff;
+    font-family: 'HelveticaNeueLight';
+    font-size: 12px;
+    letter-spacing: 1px;   
+    width: 100%;
+    display: block; 
+}
+.ffd-logo {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+.media-footer {
+    color: #fff;
+    font-family: 'HelveticaNeueLight';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.media-footer .fa {
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+.desc-footer {
+    margin-top: 15px;
+}
+.date-footer {
+    font-family: 'HelveticaNeueBold';
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.day-footer {
+    display: inline-block;
+    width: 100%;
+}
+.day-footer span {
+    font-family: 'HelveticaNeueBold';
+    font-size: 12px;
+    float: left;
+    margin-right: 30px;
+    display: inline-block;
+}
+.day-footer span i {
+    display: block;
+    font-style: normal;
+    font-family: 'HelveticaNeueLight';
+}
+.ffd-logo img {
+    max-width: 100%;
+}
+.socmed {
+    font-size: 12px;
+    color: #fff;
+    font-family: 'HelveticaNeueRegular';
+    display: inline-block;
+    margin-top: 30px;
+}
+.socmed span {
+    float: left;
+    display: inline-block;
+    opacity: .4;
+    margin-right: 15px;
+    line-height: 25px;
+    transition: ease all .5s;
+    -webkit-transition: ease all .5s;
+    -ms-transition: ease all .5s;
+}
+.socmed a span {
+    width: 26px;
+    height: 25px;
+    background: url(../images/socmed.png) no-repeat center;
+}
+.socmed a.ig span {
+    background-position: 0 0 !important;
+}
+.socmed a.fb span {
+    background-position: -29px 0 !important;
+}
+.socmed a.tw span {
+    background-position: -58px 0 !important;
+}
+.socmed a:hover span {
+    opacity: 1;
+}
+.partner-footer {
+    width: 270px;
+    background: #fff;
+    height: 150px;
+    margin:  0 auto;
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.partner-footer {
+    text-align: center;
+    padding: 8px;
+}
+.partner-footer a {
+    margin: 5px 10px;
+    display: inline-block;
+}
+@media screen and (max-width: 1067px) {
+    .container-fluid-ft-top {
+        background-size: auto 100%;
+        background-position: right;
+    }
+}
+@media screen and (max-width: 991px) {
+    .clearfix {
+        margin-bottom: 400px;
+    }
+    footer .container {
+        width: 100%;
+    }
+    .socmed {
+        margin-top: 15px;
+    }
+    .container-fluid-ft-top {
+        padding: 15px;
+        padding-bottom: 45px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container-fluid-ft-top {
+     display: none;
+    }    
+    .clearfix {
+        margin-bottom: 77px;
+    }
+}
+@media screen and (max-width: 767px) {
+    footer {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        z-index: 1;
+    }
+    .clearfix {
+        display: none;
+    }
+    .container-fluid-ft-top .heightsame {
+        height: auto !important;
+    }
+    .frame-footer-desc {
+        margin-bottom: 30px;
+    }
+    .ffd-logo {
+        padding-top: 30px;
+        margin-bottom: 0;
+        display: inline-block;
+        width: 100%;
+    }
+    .ffd-logo img {
+        float: left;
+        display: inline-block;
+    }
+}

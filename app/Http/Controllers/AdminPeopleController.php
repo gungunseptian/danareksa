@@ -31,6 +31,7 @@
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Title","name"=>"title"];
+			$this->col[] = ["label"=>"Position","name"=>"position"];
 			$this->col[] = ["label"=>"Description","name"=>"description"];
 			$this->col[] = ["label"=>"Image","name"=>"image","image"=>true];
 			$this->col[] = ["label"=>"Users","name"=>"id_cms_users","join"=>"cms_users,name"];
@@ -41,9 +42,10 @@
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Title','name'=>'title','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
-			$this->form[] = ['label'=>'Description','name'=>'description','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Image','name'=>'image','type'=>'upload','validation'=>'required|image|max:3000','width'=>'col-sm-10','help'=>'File types support : JPG, JPEG, PNG, GIF, BMP'];
-			$this->form[] = ['label'=>'Cms Users','name'=>'id_cms_users','type'=>'hidden','validation'=>'required|integer|min:0','width'=>'col-sm-10','value'=>Session::get("admin_id")];
+			$this->form[] = ['label'=>'Position','name'=>'position','validation'=>'required','width'=>'col-sm-9'];
+			$this->form[] = ['label'=>'Description','name'=>'description','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10','help'=>'File types support : JPG, JPEG, PNG, GIF, BMP'];
+			$this->form[] = ['label'=>'Image','name'=>'image','type'=>'upload','validation'=>'required|image|max:3000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Cms Users','name'=>'id_cms_users','type'=>'hidden','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'Active;InActive'];
 			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'select2','validation'=>'required|min:1|max:255','width'=>'col-sm-10','dataenum'=>'Active;InActive'];
 			$this->form[] = ['label'=>'Type','name'=>'type','type'=>'select2','validation'=>'required|min:1','width'=>'col-sm-10','dataenum'=>'director; commisioner'];
 			# END FORM DO NOT REMOVE THIS LINE
@@ -53,8 +55,8 @@
 			//$this->form[] = ['label'=>'Title','name'=>'title','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
 			//$this->form[] = ['label'=>'Description','name'=>'description','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Image','name'=>'image','type'=>'upload','validation'=>'required|image|max:3000','width'=>'col-sm-10','help'=>'File types support : JPG, JPEG, PNG, GIF, BMP'];
-			//$this->form[] = ['label'=>'Cms Users','name'=>'id_cms_users','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'cms_users,name'];
-			//$this->form[] = ['label'=>'Status','name'=>'status','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			//$this->form[] = ['label'=>'Cms Users','name'=>'id_cms_users','type'=>'hidden','validation'=>'required|integer|min:0','width'=>'col-sm-10','value'=>Session::get("admin_id")];
+			//$this->form[] = ['label'=>'Status','name'=>'status','type'=>'select2','validation'=>'required|min:1|max:255','width'=>'col-sm-10','dataenum'=>'Active;InActive'];
 			//$this->form[] = ['label'=>'Type','name'=>'type','type'=>'select2','validation'=>'required|min:1','width'=>'col-sm-10','dataenum'=>'director; commisioner'];
 			# OLD END FORM
 

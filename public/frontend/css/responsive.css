@@ -1,0 +1,372 @@
+@media screen and (max-width:1240px) {
+	.cf-work-with-us {
+		background-size: auto 100%;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.frame-award .tab-content {
+		width: 520px;
+	}
+	.banner-right-page {
+		margin-left: 30px;
+	}
+}
+@media screen and (max-width:991px) {
+	.title-banner {
+		font-size: 36px;
+	}
+	.intro-banner {
+		margin-top: 0;
+		font-size: 16px;
+	}
+	.link-our-desc span {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.frame-link-people img {
+		height: 100%;
+		width: auto;
+	}
+	.list-values ul li {
+		width: 33%;
+		margin-bottom: 15px;
+	}
+	.footer-banner-link {
+		padding-top: 90px;
+		padding-right: 20px;
+	}
+	.frame-award .tab-content {
+	    width: 320px;
+	    padding-left: 20px;
+	}
+	.media-services .banner-right-page {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.frame-link-people img {
+		height: auto;
+		width: 100%;
+	}
+	.show-mobile {
+		display: block !important;
+	}
+	.show-desktop {
+		display: none !important;
+	}
+	.list-feature {
+		padding: 0 15px;
+	}
+	.container {
+		padding: 0;
+	}
+	.cf-work-with-us {
+		text-align: center;
+	}
+	.frame-message {
+		padding: 15px 0;
+		height: auto;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.form-message {
+		width: 100%;
+	}
+	.container-fluid-ft-btm {
+		padding: 15px;
+	}
+	.banner-page .desc-top-banner {
+		top: 0;
+	}
+	.fs-ib.pr50 {
+		padding-right: 15px !important;
+	}
+	.fs-ib.pl50 {
+		padding-left: 15px !important;
+	}
+	.title-frame {
+		font-size: 32px;
+		line-height: normal;
+	}
+	.subtitle-frame {
+		font-size: 16px;
+	}
+	.tab-contact .nav-tabs>li>a {
+		padding: 15px 30px;
+	}
+	.col-contact {
+		margin-top: 0;
+	}
+	.fup-left {
+		padding-right: 15px;
+	}
+	.fup-right {
+		padding-left: 15px;
+	}
+	.list-values ul li {
+		width: 50%;
+	}
+	.footer-banner-link {
+		padding-right: 0;
+		text-align: center;
+	}
+	.frame-award .tab-content {
+		width: 80%;
+	}
+	.banner-right-page {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.col-list-milestone {
+		text-align: center !important;
+	}
+	.frame-list-milestone {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.frame-list-milestone:before, .frame-list-milestone:after {
+		display: none;
+	}
+	.line-center span {
+		height: 50px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
+	.media-services {
+		display: block;
+	}
+	.media-services .media-body, 
+	.media-services .media-right,
+	.media-services .media-left {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	.media-services .banner-right-page {
+		width: 100%;
+		height: auto;
+	}
+	.frame-services h2 {
+		font-size: 32px;
+	}
+	.frame-services span {
+		width: 100%;
+		display: block;
+	}
+	.frame-services span a {
+		font-size: 14px;
+		margin: 0 10px;
+	}
+	.media-services .media-right .banner-right-page {
+		margin-top: 15px;
+	}
+	.fs-ib h2 {
+		font-size: 20px;
+	}
+	.title-resources {
+		text-align: center;
+	}
+	.col-dtl-left.pr30 {
+		padding-right: 15px !important;
+	}
+	.col-widget {
+		padding-left: 15px !important;
+	}
+	.frame-detail .title-frame {
+		font-size: 26px;
+	}
+	.date-detail {
+		font-size: 14px;
+    	font-family: 'HelveticaNeueRegular';
+	}
+	.frame-detail h3 {
+		line-height: 22px;
+		font-size: 16px;
+		font-family: 'HelveticaNeueMedium';
+	}
+	.col-people {
+		height: auto !important;
+	}
+	.frame-list-news .desc-slider-news p {
+		min-height: auto;
+	}
+	.feature-news-list-ib {
+		margin-top: 100px;
+	}
+	.title-frame-list-ib {
+		text-align: center;
+		margin-top: 0 !important;
+	}
+}
+@media screen and (max-width: 680px) {	
+	.frame-award .tab-content {
+		width: 75%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.feature-top {
+		margin-top: 15px;
+		height: auto;
+	}
+	.feature-top ul {
+		height: 100%;
+		display: table;
+	}
+	.feature-top ul li {
+		height: 100%;
+		display: table-cell;
+		float: none;
+	}
+	.feature-top ul li a {
+		display: block;
+	}
+	.list-feature {
+		padding: 15px;
+	}
+	.list-feature h2 {
+		font-size: 18px;
+	}
+	.list-feature span {
+		font-size: 14px;
+	}
+	.link-our-desc a {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.tab-contact .nav-tabs {
+		width: 100%;
+	}
+	.tab-contact .nav-tabs>li {
+		float: none;
+	}
+	.tab-contact .nav-tabs>li>a {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.tab-contact .nav-tabs>li:first-child>a {
+	    border-right: 1px solid #b2aba8;
+	    border-top-right-radius: 4px;
+	    border-bottom-right-radius: 4px;
+	}
+	.tab-contact .nav-tabs>li:last-child>a {
+	    border-left: 1px solid #b2aba8;
+	    border-top-left-radius: 4px;
+	    border-bottom-left-radius: 4px;
+	}
+	.btn-white, .btn-blue {
+		padding: 15px 20px;
+	}
+	.page-intro-frame {
+		font-size: 16px;
+	}
+	.frame-award .nav-tabs>li {
+		padding-bottom: 20px;
+	}
+	.frame-award .nav-tabs>li>a {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 530px) {
+	.ffd-logo {
+		text-align: center;
+	}
+	.socmed {
+		display: inline-block;
+		float: none;
+		margin-top: 30px;
+	}
+	.ffd-logo img {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+	.title-banner {
+		font-size: 24px;
+	}
+	.intro-banner {
+		font-size: 14px;
+	}
+	.banner-page .desc-top-banner .title-banner {
+		font-size: 24px;
+	}
+	.list-values ul li {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.frame-link-people img {
+		height: 100%;
+		width: auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	.feature-top ul {
+		display: block;
+	}
+	.feature-top ul li {
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #e3e3e3;
+		border-right: 0;
+	}
+	.feature-top ul li:last-child {
+		border-bottom: 0;
+	}
+	.feature-number {
+		padding: 15px 0;
+	}
+	.feature-number p {
+		margin-top: 0;
+	}
+	.link-our-desc a {
+		display: block;
+	}
+	.sortby li {
+		font-size: 14px;
+		margin: 0 10px;
+	}
+	.sortby li a {
+		font-size: 14px;
+	}
+	.desc-services ul {
+		padding-left: 22px;
+	}
+	.frame-services {
+		padding: 15px 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	.frame-award .nav-tabs>li {
+		padding-bottom: 15px;
+	}
+	.frame-award .nav-tabs>li>a {
+		font-size: 18px;
+	}
+	.list-award {
+		font-size: 16px;
+	}
+	.list-award span {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.frame-award .nav-tabs>li>a {
+		font-size: 16px;
+	}
+	.frame-award .tab-content {
+		padding-left: 15px;
+	}
+}
+@media screen and (max-width: 330px) {
+	.frame-award .tab-content {
+	    width: 72%;
+	}
+}

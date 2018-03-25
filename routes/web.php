@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'frontend\HomeController@index');
+Route::get('/news/{id}/{slug}', 'frontend\NewsController@detail');
+Route::get('/about-us', 'frontend\PagesController@about');
+Route::get('/values', 'frontend\PagesController@values');
+Route::get('/our-people', 'frontend\OurPeopleController@index');
+
